@@ -1,0 +1,93 @@
+---
+title: "Comparing 2 means"
+subtitle: "t-test"
+author: "Mario E. Bermonti-Pérez, MA, PhD"
+format: 
+    revealjs:
+        incremental: true 
+        chalkboard: true 
+        theme: dark
+        center: true
+---
+
+<!--  -->
+<!-- Pre-content -->
+<!--  -->
+
+<!-- Import packages -->
+```{r}
+library(faux)
+library(tidyverse)
+library(ggplot2)
+
+set.seed(1)
+```
+
+<!-- Simulate data -->
+
+<!-- Example: Planning ADHD -->
+<!-- Effect -->
+```{r}
+between <- list(group = c("No ADHD", "ADHD"))
+means <- c(99, 90)
+
+data_adhd_plan_effect <- sim_design(
+    between = between, 
+    n = c(100), 
+    mu = means,
+    sd = 15,
+    dv = "planning",
+    plot = FALSE
+)
+```
+
+<!-- Example: Planning ADHD -->
+<!-- No Effect -->
+```{r}
+between <- list(group = c("No ADHD", "ADHD"))
+means <- c(99, 97)
+
+data_adhd_plan_no_effect <- sim_design(
+    between = between, 
+    n = c(100), 
+    mu = means,
+    sd = 15,
+    dv = "planning",
+    plot = FALSE
+)
+```
+
+## Objectives
+:::{.center}
+- Understand the usefulness of the independent t-test
+- Understand the basic concepts of the independent t-test
+- Conduct the independent t-test
+- Interpret the results of the independent t-test
+::::
+
+# t-test
+::: {.notes}
+What is a t-test?
+:::
+
+## Usefulness
+
+## GLM form
+
+## General process
+
+# Conducting and interpreting
+
+## Viz
+
+## Descriptive stats
+
+## Conducting an independent t-test
+
+## Interpretation
+
+## Effect size
+
+## Statistical significance
+
+## Assumptions
