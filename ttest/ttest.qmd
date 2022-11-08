@@ -20,6 +20,7 @@ library(faux)
 library(tidyverse)
 library(ggplot2)
 
+# guarantee reproducibility
 set.seed(1)
 ```
 
@@ -70,24 +71,329 @@ data_adhd_plan_no_effect <- sim_design(
 What is a t-test?
 :::
 
+
+# Basics
+
 ## Usefulness
+![](./assets/ex1.png)
+
+## Usefulness
+![](./assets/ex2.png)
+
+## Usefulness
+![](./assets/ex3.png)
+
+## General form
+![](./assets/comp_groups.png)
+
+::: {.notes}
+Compare 2 groups
+:::
+
+## Even more general
+:::: {.columns}
+::: {.column width="50%"}
+![](./assets/comp_conds.png)
+:::
+
+::: {.column width="50%"}
+![](./assets/comp_means.png)
+:::
+::::
+
+::: {.notes}
+More general, powerful
+:::
 
 ## GLM form
+:::: {.columns}
+::: {.column width="50%"}
+![](./assets/glm.png)
+:::
 
-## General process
+::: {.column width="50%"}
+![](./assets/glm_form.png)
+:::
+::::
+
+## GLM form - examples
+:::: {.columns}
+::: {.column width="50%"}
+![](./assets/glm_form.png)
+:::
+
+::: {.column width="50%"}
+![](./assets/glm_form_ex1.png)
+:::
+::::
+
+## GLM form - examples
+:::: {.columns}
+::: {.column width="50%"}
+![](./assets/glm_form.png)
+:::
+
+::: {.column width="50%"}
+![](./assets/glm_form_ex2.png)
+:::
+::::
+
+## GLM form - examples
+:::: {.columns}
+::: {.column width="50%"}
+![](./assets/glm_form.png)
+:::
+
+::: {.column width="50%"}
+![](./assets/glm_form_ex3.png)
+:::
+::::
+
+# General process (conceptual)
+
+## Get data
+```{r}
+ggplot(data_adhd_plan_effect, aes(planning)) + geom_histogram()
+```
+
+## Group data
+```{r}
+ggplot(data_adhd_plan_effect, aes(x = group, y = planning)) +
+geom_jitter(width=0.15)
+```
+::: {.notes}
+what is next?
+:::
+
+## Estimate means
+```{r}
+ggplot(data_adhd_plan_effect, aes(x = group, y = planning)) +
+geom_jitter(width=0.15) +
+stat_summary(
+    geom = "point",
+    fun.y = "mean",
+    col = "red",
+    size = 5,
+    fill = "red"
+)
+```
+::: {.notes}
+what is next?
+:::
+
+## Estimate effect (difference)
+
+```{r}
+ggplot(data_adhd_plan_effect, aes(x = group, y = planning)) +
+geom_jitter(width=0.15) +
+stat_summary(
+    geom = "point",
+    fun.y = "mean",
+    col = "red",
+    size = 5,
+    fill = "red"
+) +
+stat_summary(fun=mean, geom="line", aes(group=1))
+```
+
+## That is all folks!
 
 # Conducting and interpreting
 
+## Hands on exercises
+### Get ready!
+::: {.notes}
+Download data from teams
+:::
+
+## Study
+:::: {.columns}
+::: {.column width="50%"}
+Effect of ADHD on planning ability
+:::
+
+::: {.column width="50%"}
+### Variables
+- ADHD
+    + healthy
+    + ADHD
+- Plannig: Standardized test
+:::
+::::
+
+::: {.notes}
+Standardized tests: mean? SD?
+:::
+
+## Hypothesis
+- H0: No effect
+- H1: Effect
+
+::: {.notes}
+- NHST - null = 0
+
+- H0: Hardheaded
+:::
+
+## Info needed
+:::: {.columns}
+::: {.column width="50%"}
+- Effect size
+:::
+
+::: {.column width="50%"}
+- Statistical significance
+:::
+::::
+
+::: {.notes}
+What are these?
+:::
+
 ## Viz
+:::: {.columns}
+::: {.column width="50%"}
+- Bar plot
+:::
+
+::: {.column width="50%"}
+- Box plot
+:::
+::::
+
+::: {.notes}
+- Which provides more info?
+
+- Why use both? More info = better
+:::
 
 ## Descriptive stats
+::: {.notes}
+Detailed: mean, median, SD, Range
+:::
 
-## Conducting an independent t-test
+# Conducting an independent t-test
+![](./assets/conduct_ttest.png)
 
 ## Interpretation
 
 ## Effect size
 
-## Statistical significance
+## Unstandardized
+- Mean difference
+- 95% CI
 
+::: {.notes}
+Diff in raw scores?
+:::
+
+## Standardized
+:::: {.columns}
+::: {.column width="50%"}
+- Hedges g
+- 95% CI
+::: 
+
+::: {.column width="50%"}
+### Interpretation
+    + small: .2 - 0.49
+    + medium: 0.5 - 0.79
+    + large: 0.8+
+:::
+::::
+
+::: {.notes}
+- Diff in terms of SD?
+- Why Hedges?
+:::
+
+## Statistical significance
+:::: {.columns}
+::: {.column width="50%"}
+### Where to look
+- Equal variances not assumed
+- Significance, two sided
+:::
+
+::: {.column width="50%"}
+### Interpretation
+- p-value < 0.05 = Statistical significant
+- p-value > 0.05 = not statistical significant
+:::
+:::: 
+
+# Assumptions
 ## Assumptions
+- Types of variables (GLM)
+- Normal distribution
+- Homegeinity of variance (Welch's test)
+- No outliers
+
+::: {.notes}
+What are assumptions?
+:::
+
+## Variable types
+:::: {.columns}
+::: {.column width="50%"}
+![](./assets/glm_form.png)
+:::
+
+::: {.column width="50%"}
+### Effect of ADHD on planning
+- ADHD
+
+- Planning 
+:::
+::::
+
+::: {.notes}
+Do we meet them?
+:::
+
+## Normal distribution
+- Histograms
+- QQ plots
+
+::: {.notes}
+- QQ plots: quantiles
+
+- group by condition
+
+- normal: line
+- devs: kurtosis 
+- S shape: skewness (negative = high scores, positive = low scores)
+:::
+
+## Outliers
+- Boxplot
+
+::: {.notes}
+Do we meet them?
+:::
+
+# Closing
+
+## Recap
+- What analysis?
+- What is its use?
+- Predictor type?
+- Type of outcome?
+- Pieces of info needed?
+- Assumptions?
+
+::: {.notes}
+- t test
+- compare means
+- categorical
+- numeric
+- ES, stats sig
+- var types, normal distribution, homo variances, outliers
+:::
+
+## Questions?
+
+::: {.notes}
+- What was easiest?
+- What was hardest?
+::: 
