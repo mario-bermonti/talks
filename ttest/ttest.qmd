@@ -282,7 +282,8 @@ What are these?
 
 ## Descriptive stats
 ::: {.notes}
-Detailed: mean, median, SD, Range
+- groupby
+- detailed: mean, median, SD, Range
 :::
 
 # Conducting an independent t-test
@@ -374,7 +375,7 @@ Do we meet them?
 - group by condition
 
 - normal: line
-- devs: kurtosis 
+- devs: kurtosis, extremely values (at ends) 
 - S shape: skewness (negative = high scores, positive = low scores)
 :::
 
