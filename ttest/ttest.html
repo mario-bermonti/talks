@@ -351,23 +351,26 @@
 <div class="cell">
 
 </div>
+<!-- Prepare data and save it to file -->
+<div class="cell">
+
+</div>
 </section>
 <section id="objectives" class="slide level2 center">
 <h2>Objectives</h2>
 <div class="center">
 <ul>
 <li class="fragment">Understand the usefulness of the independent t-test</li>
-<li class="fragment">Understand the basic concepts of the independent t-test</li>
+<li class="fragment">Understan the basic concepts of the independent t-test</li>
 <li class="fragment">Conduct the independent t-test</li>
 <li class="fragment">Interpret the results of the independent t-test</li>
 </ul>
 </div>
 </section>
-<section>
 <section id="t-test" class="title-slide slide level1 center">
 <h1>t-test</h1>
 <aside class="notes">
-
+<p>What is a t-test?</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -380,40 +383,537 @@
           display:block!important;
       }</style></aside>
 </section>
+
+<section>
+<section id="basics" class="title-slide slide level1 center">
+<h1>Basics</h1>
+
+</section>
 <section id="usefulness" class="slide level2 center">
 <h2>Usefulness</h2>
+
+<img data-src="./assets/ex1.png" class="r-stretch"></section>
+<section id="usefulness-1" class="slide level2 center">
+<h2>Usefulness</h2>
+
+<img data-src="./assets/ex2.png" class="r-stretch"></section>
+<section id="usefulness-2" class="slide level2 center">
+<h2>Usefulness</h2>
+
+<img data-src="./assets/ex3.png" class="r-stretch"></section>
+<section id="general-form" class="slide level2 center">
+<h2>General form</h2>
+
+<img data-src="./assets/comp_groups.png" class="r-stretch"><aside class="notes">
+<p>Compare 2 groups</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="even-more-general" class="slide level2 center">
+<h2>Even more general</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><img data-src="./assets/comp_conds.png"></p>
+</div><div class="column" style="width:50%;">
+<p><img data-src="./assets/comp_means.png"></p>
+</div>
+</div>
+<aside class="notes">
+<p>More general, powerful</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
 <section id="glm-form" class="slide level2 center">
 <h2>GLM form</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><img data-src="./assets/glm.png"></p>
+</div><div class="column" style="width:50%;">
+<p><img data-src="./assets/glm_form.png"></p>
+</div>
+</div>
 </section>
-<section id="general-process" class="slide level2 center">
-<h2>General process</h2>
+<section id="glm-form---examples" class="slide level2 center">
+<h2>GLM form - examples</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><img data-src="./assets/glm_form.png"></p>
+</div><div class="column" style="width:50%;">
+<p><img data-src="./assets/glm_form_ex1.png"></p>
+</div>
+</div>
+</section>
+<section id="glm-form---examples-1" class="slide level2 center">
+<h2>GLM form - examples</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><img data-src="./assets/glm_form.png"></p>
+</div><div class="column" style="width:50%;">
+<p><img data-src="./assets/glm_form_ex2.png"></p>
+</div>
+</div>
+</section>
+<section id="glm-form---examples-2" class="slide level2 center">
+<h2>GLM form - examples</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><img data-src="./assets/glm_form.png"></p>
+</div><div class="column" style="width:50%;">
+<p><img data-src="./assets/glm_form_ex3.png"></p>
+</div>
+</div>
+</section></section>
+<section>
+<section id="general-process-conceptual" class="title-slide slide level1 center">
+<h1>General process (conceptual)</h1>
+
+</section>
+<section id="get-data" class="slide level2 center">
+<h2>Get data</h2>
+
+<img data-src="ttest_files/figure-revealjs/unnamed-chunk-5-1.png" width="960" class="r-stretch"></section>
+<section id="group-data" class="slide level2 center">
+<h2>Group data</h2>
+
+<img data-src="ttest_files/figure-revealjs/unnamed-chunk-6-1.png" width="960" class="r-stretch"><aside class="notes">
+<p>what is next?</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="estimate-means" class="slide level2 center">
+<h2>Estimate means</h2>
+
+<img data-src="ttest_files/figure-revealjs/unnamed-chunk-7-1.png" width="960" class="r-stretch"><aside class="notes">
+<p>what is next?</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="estimate-effect-difference" class="slide level2 center">
+<h2>Estimate effect (difference)</h2>
+
+<img data-src="ttest_files/figure-revealjs/unnamed-chunk-8-1.png" width="960" class="r-stretch"></section>
+<section id="that-is-all-folks" class="slide level2 center">
+<h2>That is all folks!</h2>
 </section></section>
 <section>
 <section id="conducting-and-interpreting" class="title-slide slide level1 center">
 <h1>Conducting and interpreting</h1>
 
 </section>
+<section id="hands-on-exercises" class="slide level2 center">
+<h2>Hands on exercises</h2>
+<h3 id="get-ready">Get ready!</h3>
+<aside class="notes">
+<p>Download data from teams</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="study" class="slide level2 center">
+<h2>Study</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p>Effect of ADHD on planning ability</p>
+</div><div class="column" style="width:50%;">
+<h3 id="variables">Variables</h3>
+<ul>
+<li class="fragment">ADHD
+<ul>
+<li class="fragment">healthy</li>
+<li class="fragment">ADHD</li>
+</ul></li>
+<li class="fragment">Plannig: Standardized test</li>
+</ul>
+</div>
+</div>
+<aside class="notes">
+<p>Standardized tests: mean? SD?</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="hypothesis" class="slide level2 center">
+<h2>Hypothesis</h2>
+<ul>
+<li class="fragment">H0: No effect</li>
+<li class="fragment">H1: Effect</li>
+</ul>
+<aside class="notes">
+<ul>
+<li><p>NHST - null = 0</p></li>
+<li><p>H0: Hardheaded</p></li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="info-needed" class="slide level2 center">
+<h2>Info needed</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li class="fragment">Effect size</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<ul>
+<li class="fragment">Statistical significance</li>
+</ul>
+</div>
+</div>
+<aside class="notes">
+<p>What are these?</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
 <section id="viz" class="slide level2 center">
 <h2>Viz</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li class="fragment">Bar plot</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<ul>
+<li class="fragment">Box plot</li>
+</ul>
+</div>
+</div>
+<aside class="notes">
+<ul>
+<li><p>Which provides more info?</p></li>
+<li><p>Why use both? More info = better</p></li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
 <section id="descriptive-stats" class="slide level2 center">
 <h2>Descriptive stats</h2>
-</section>
-<section id="conducting-an-independent-t-test" class="slide level2 center">
-<h2>Conducting an independent t-test</h2>
-</section>
+<aside class="notes">
+<p>Detailed: mean, median, SD, Range</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section></section>
+<section>
+<section id="conducting-an-independent-t-test" class="title-slide slide level1 center">
+<h1>Conducting an independent t-test</h1>
+
+<img data-src="./assets/conduct_ttest.png" class="r-stretch"></section>
 <section id="interpretation" class="slide level2 center">
 <h2>Interpretation</h2>
 </section>
 <section id="effect-size" class="slide level2 center">
 <h2>Effect size</h2>
 </section>
+<section id="unstandardized" class="slide level2 center">
+<h2>Unstandardized</h2>
+<ul>
+<li class="fragment">Mean difference</li>
+<li class="fragment">95% CI</li>
+</ul>
+<aside class="notes">
+<p>Diff in raw scores?</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="standardized" class="slide level2 center">
+<h2>Standardized</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li class="fragment">Hedges g</li>
+<li class="fragment">95% CI</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<h3 id="interpretation-1">Interpretation</h3>
+<pre><code>+ small: .2 - 0.49
++ medium: 0.5 - 0.79
++ large: 0.8+</code></pre>
+</div>
+</div>
+<aside class="notes">
+<ul>
+<li>Diff in terms of SD?</li>
+<li>Why Hedges?</li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
 <section id="statistical-significance" class="slide level2 center">
 <h2>Statistical significance</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<h3 id="where-to-look">Where to look</h3>
+<ul>
+<li class="fragment">Equal variances not assumed</li>
+<li class="fragment">Significance, two sided</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<h3 id="interpretation-2">Interpretation</h3>
+<ul>
+<li class="fragment">p-value &lt; 0.05 = Statistical significant</li>
+<li class="fragment">p-value &gt; 0.05 = not statistical significant</li>
+</ul>
+</div>
+</div>
+</section></section>
+<section>
+<section id="assumptions" class="title-slide slide level1 center">
+<h1>Assumptions</h1>
+
 </section>
-<section id="assumptions" class="slide level2 center">
+<section id="assumptions-1" class="slide level2 center">
 <h2>Assumptions</h2>
+<ul>
+<li class="fragment">Types of variables (GLM)</li>
+<li class="fragment">Normal distribution</li>
+<li class="fragment">Homegeinity of variance (Welch’s test)</li>
+<li class="fragment">No outliers</li>
+</ul>
+<aside class="notes">
+<p>What are assumptions?</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="variable-types" class="slide level2 center">
+<h2>Variable types</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><img data-src="./assets/glm_form.png"></p>
+</div><div class="column" style="width:50%;">
+<h3 id="effect-of-adhd-on-planning">Effect of ADHD on planning</h3>
+<ul>
+<li class="fragment"><p>ADHD</p></li>
+<li class="fragment"><p>Planning</p></li>
+</ul>
+</div>
+</div>
+<aside class="notes">
+<p>Do we meet them?</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="normal-distribution" class="slide level2 center">
+<h2>Normal distribution</h2>
+<ul>
+<li class="fragment">Histograms</li>
+<li class="fragment">QQ plots</li>
+</ul>
+<aside class="notes">
+<ul>
+<li><p>QQ plots: quantiles</p></li>
+<li><p>group by condition</p></li>
+<li><p>normal: line</p></li>
+<li><p>devs: kurtosis</p></li>
+<li><p>S shape: skewness (negative = high scores, positive = low scores)</p></li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="outliers" class="slide level2 center">
+<h2>Outliers</h2>
+<ul>
+<li class="fragment">Boxplot</li>
+</ul>
+<aside class="notes">
+<p>Do we meet them?</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section></section>
+<section>
+<section id="closing" class="title-slide slide level1 center">
+<h1>Closing</h1>
+
+</section>
+<section id="recap" class="slide level2 center">
+<h2>Recap</h2>
+<ul>
+<li class="fragment">What analysis?</li>
+<li class="fragment">What is its use?</li>
+<li class="fragment">Predictor type?</li>
+<li class="fragment">Type of outcome?</li>
+<li class="fragment">Pieces of info needed?</li>
+<li class="fragment">Assumptions?</li>
+</ul>
+<aside class="notes">
+<ul>
+<li>t test</li>
+<li>compare means</li>
+<li>categorical</li>
+<li>numeric</li>
+<li>ES, stats sig</li>
+<li>var types, normal distribution, homo variances, outliers</li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="questions" class="slide level2 center">
+<h2>Questions?</h2>
+<aside class="notes">
+<ul>
+<li>What was easiest?</li>
+<li>What was hardest?</li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 <div class="footer footer-default">
 
 </div>

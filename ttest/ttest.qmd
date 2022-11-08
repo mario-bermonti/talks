@@ -58,6 +58,19 @@ data_adhd_plan_no_effect <- sim_design(
 )
 ```
 
+<!-- Prepare data and save it to file -->
+
+```{r}
+data_adhd_plan_effect <- data_adhd_plan_effect %>% mutate(planning = as.integer(planning))
+
+write.csv(data_adhd_plan_effect, "./data_adhd_plan_1", row.names = FALSE)
+
+data_adhd_plan_no_effect <- data_adhd_plan_no_effect %>% mutate(planning = as.integer(planning))
+
+write.csv(data_adhd_plan_no_effect, "./data_adhd_plan_2", row.names = FALSE)
+```
+
+
 ## Objectives
 :::{.center}
 - Understand the usefulness of the independent t-test
