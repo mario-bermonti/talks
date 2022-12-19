@@ -1,0 +1,7 @@
+This repo contains my talks on research methods, quantitative data analysis, and coding.
+
+These talks are usually offered at my lab, my department, and similar forums.
+
+The content is primarily focused on beginners or persons with limited knowledge on these topics.
+Therefore, my main goal with these talks is to build basic knowledge about these topics,
+build confidence, and get people working on these topics fast.
