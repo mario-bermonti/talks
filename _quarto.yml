@@ -1,0 +1,20 @@
+project:
+  type: website
+
+website:
+  title: "Talks"
+  navbar:
+    left:
+      - href: glm/glm.qmd
+        text: GLM
+      - href: ttest/ttest.qmd
+        text: t-test
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+
+
+
