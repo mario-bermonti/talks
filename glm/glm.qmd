@@ -7,8 +7,8 @@ format:
         chalkboard: true 
         theme: dark
         center: true
-    pdf:
-        echo: false
+    # pdf:
+    #     echo: false
 ---
 
 ```{r}
