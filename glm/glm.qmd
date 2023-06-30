@@ -168,7 +168,7 @@ Tip: 2 centers = 2 pops
 ## Group by attentional level
 ```{r}
 ggplot(data_2_groups, aes(x = group, y = wm_span)) +
-geom_jitter(width=0.15)
+    geom_jitter(width = 0.15)
 ```
 
 ## Estimate mean
