@@ -1,12 +1,10 @@
 ---
-title: "Comparing 2 means"
+title: "Comparing 2 groups"
 subtitle: "t-test"
 author: "Mario E. Bermonti-Pérez, MA, PhD"
 format: 
     revealjs:
         incremental: true 
-        chalkboard: true 
-        theme: dark
         center: true
     # pdf:
     #     echo: false
@@ -75,17 +73,17 @@ write.csv(data_adhd_plan_no_effect, "./data_adhd_plan_2.csv", row.names = FALSE)
 
 ## Objectives
 :::{.center}
-- Understand the usefulness of the independent t-test
-- Understand the basic concepts of the independent t-test
-- Conduct the independent t-test
-- Interpret the results of the independent t-test
+- Understand the basic logic behind comparing 2 groups
+- Identify the usefulness of the independent t-test
+- Identify the basic concepts of the independent t-test
+- Conduct an independent t-test
+- Interpret the results of an independent t-test
 ::::
 
 # t-test
 ::: {.notes}
 What is a t-test?
 :::
-
 
 # Basics
 
@@ -105,19 +103,19 @@ What is a t-test?
 Compare 2 groups
 :::
 
-## Even more general
-:::: {.columns}
-::: {.column width="50%"}
+## More general
 ![](./assets/comp_conds.png)
-:::
-
-::: {.column width="50%"}
-![](./assets/comp_means.png)
-:::
-::::
 
 ::: {.notes}
-More general, powerful
+more general, powerful
+intervention
+:::
+
+## Even more general
+![](./assets/comp_means.png)
+
+::: {.notes}
+most powerful
 :::
 
 ## GLM form
@@ -171,13 +169,19 @@ More general, powerful
 ggplot(data_adhd_plan_effect, aes(planning)) + geom_histogram()
 ```
 
+::: {.notes}
+basic question: Are there 2 groups?
+:::
+
 ## Group data
 ```{r}
 ggplot(data_adhd_plan_effect, aes(x = group, y = planning)) +
 geom_jitter(width=0.15)
 ```
 ::: {.notes}
-what is next?
+- how do we compare the groups? 
+- each point or overall?
+- how do we know an overall?
 :::
 
 ## Estimate means
@@ -192,8 +196,9 @@ stat_summary(
     fill = "red"
 )
 ```
+
 ::: {.notes}
-what is next?
+Draw a line!
 :::
 
 ## Estimate effect (difference)
@@ -212,11 +217,17 @@ stat_summary(fun=mean, geom="line", aes(group=1))
 ```
 
 ## That is all folks!
+## Not exactly...
+ 
+## We need to know:
+  +  is the difference real?
+  +  size of the difference?
 
 # Conducting and interpreting
 
 ## Hands on exercises
 ### Get ready!
+
 ::: {.notes}
 Download data from teams
 :::
@@ -245,8 +256,6 @@ Standardized tests: mean? SD?
 - H1: Effect
 
 ::: {.notes}
-- NHST - null = 0
-
 - H0: Hardheaded
 :::
 
@@ -283,8 +292,11 @@ What are these?
 :::
 
 ## Descriptive stats
+- basic
+- detailed
+  
 ::: {.notes}
-- groupby
+- group data
 - detailed: mean, median, SD, Range
 :::
 
@@ -304,17 +316,19 @@ Diff in raw scores?
 :::
 
 ## Standardized
+
 :::: {.columns}
 ::: {.column width="50%"}
+### Indicators
 - Hedges g
 - 95% CI
 ::: 
 
 ::: {.column width="50%"}
 ### Interpretation
-    + small: .2 - 0.49
-    + medium: 0.5 - 0.79
-    + large: 0.8+
+- small: .2 - 0.49
+- medium: 0.5 - 0.79
+- large: 0.8+
 :::
 ::::
 
@@ -342,60 +356,21 @@ Diff in raw scores?
 ## Assumptions
 - Types of variables (GLM)
 - Normal distribution
-- Homegeinity of variance (Welch's test)
+- Homegeinity of variance (Welch's test) - not important
 - No outliers
 
 ::: {.notes}
 What are assumptions?
 :::
 
-## Variable types
-:::: {.columns}
-::: {.column width="50%"}
-![](./assets/glm_form.png)
-:::
-
-::: {.column width="50%"}
-### Effect of ADHD on planning
-- ADHD
-
-- Planning 
-:::
-::::
-
-::: {.notes}
-Do we meet them?
-:::
-
-## Normal distribution
-- Histograms
-- QQ plots
-
-::: {.notes}
-- QQ plots: quantiles
-
-- group by condition
-
-- normal: line
-- devs: kurtosis, extremely values (at ends) 
-- S shape: skewness (negative = high scores, positive = low scores)
-:::
-
-## Outliers
-- Boxplot
-
-::: {.notes}
-Do we meet them?
-:::
-
 # Closing
 
 ## Recap
 - What analysis?
-- What is its use?
+- Usefulness?
 - Predictor type?
 - Type of outcome?
-- Pieces of info needed?
+- Pieces of info t-tests provide?
 - Assumptions?
 
 ::: {.notes}
