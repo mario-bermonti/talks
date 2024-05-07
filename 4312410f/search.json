@@ -1,0 +1,569 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Home",
+    "section": "",
+    "text": "These talks are usually offered at my lab, my department, and similar forums.\nThe content is primarily focused on beginners or persons with limited knowledge on these topics. Therefore, my main goal with these talks is to build basic knowledge about these topics, build confidence, and get people working on these topics fast."
+  },
+  {
+    "objectID": "ttest/ttest.html#objectives",
+    "href": "ttest/ttest.html#objectives",
+    "title": "Comparing 2 groups",
+    "section": "Objectives",
+    "text": "Objectives\n\n\nUnderstand the basic logic behind comparing 2 groups\nIdentify the usefulness of the independent t-test\nIdentify the basic concepts of the independent t-test\nConduct an independent t-test\nInterpret the results of an independent t-test"
+  },
+  {
+    "objectID": "ttest/ttest.html#usefulness",
+    "href": "ttest/ttest.html#usefulness",
+    "title": "Comparing 2 groups",
+    "section": "Usefulness",
+    "text": "Usefulness"
+  },
+  {
+    "objectID": "ttest/ttest.html#usefulness-1",
+    "href": "ttest/ttest.html#usefulness-1",
+    "title": "Comparing 2 groups",
+    "section": "Usefulness",
+    "text": "Usefulness"
+  },
+  {
+    "objectID": "ttest/ttest.html#usefulness-2",
+    "href": "ttest/ttest.html#usefulness-2",
+    "title": "Comparing 2 groups",
+    "section": "Usefulness",
+    "text": "Usefulness"
+  },
+  {
+    "objectID": "ttest/ttest.html#general-form",
+    "href": "ttest/ttest.html#general-form",
+    "title": "Comparing 2 groups",
+    "section": "General form",
+    "text": "General form\n\n\nCompare 2 groups"
+  },
+  {
+    "objectID": "ttest/ttest.html#more-general",
+    "href": "ttest/ttest.html#more-general",
+    "title": "Comparing 2 groups",
+    "section": "More general",
+    "text": "More general\n\n\nmore general, powerful intervention"
+  },
+  {
+    "objectID": "ttest/ttest.html#even-more-general",
+    "href": "ttest/ttest.html#even-more-general",
+    "title": "Comparing 2 groups",
+    "section": "Even more general",
+    "text": "Even more general\n\n\nmost powerful"
+  },
+  {
+    "objectID": "ttest/ttest.html#glm-form",
+    "href": "ttest/ttest.html#glm-form",
+    "title": "Comparing 2 groups",
+    "section": "GLM form",
+    "text": "GLM form"
+  },
+  {
+    "objectID": "ttest/ttest.html#glm-form---examples",
+    "href": "ttest/ttest.html#glm-form---examples",
+    "title": "Comparing 2 groups",
+    "section": "GLM form - examples",
+    "text": "GLM form - examples"
+  },
+  {
+    "objectID": "ttest/ttest.html#glm-form---examples-1",
+    "href": "ttest/ttest.html#glm-form---examples-1",
+    "title": "Comparing 2 groups",
+    "section": "GLM form - examples",
+    "text": "GLM form - examples"
+  },
+  {
+    "objectID": "ttest/ttest.html#glm-form---examples-2",
+    "href": "ttest/ttest.html#glm-form---examples-2",
+    "title": "Comparing 2 groups",
+    "section": "GLM form - examples",
+    "text": "GLM form - examples"
+  },
+  {
+    "objectID": "ttest/ttest.html#get-data",
+    "href": "ttest/ttest.html#get-data",
+    "title": "Comparing 2 groups",
+    "section": "Get data",
+    "text": "Get data\n\n\nbasic question: Are there 2 groups?"
+  },
+  {
+    "objectID": "ttest/ttest.html#group-data",
+    "href": "ttest/ttest.html#group-data",
+    "title": "Comparing 2 groups",
+    "section": "Group data",
+    "text": "Group data\n\n\n\nhow do we compare the groups?\neach point or overall?\nhow do we know an overall?"
+  },
+  {
+    "objectID": "ttest/ttest.html#estimate-means",
+    "href": "ttest/ttest.html#estimate-means",
+    "title": "Comparing 2 groups",
+    "section": "Estimate means",
+    "text": "Estimate means\n\n\nDraw a line!"
+  },
+  {
+    "objectID": "ttest/ttest.html#estimate-effect-difference",
+    "href": "ttest/ttest.html#estimate-effect-difference",
+    "title": "Comparing 2 groups",
+    "section": "Estimate effect (difference)",
+    "text": "Estimate effect (difference)"
+  },
+  {
+    "objectID": "ttest/ttest.html#that-is-all-folks",
+    "href": "ttest/ttest.html#that-is-all-folks",
+    "title": "Comparing 2 groups",
+    "section": "That is all folks!",
+    "text": "That is all folks!"
+  },
+  {
+    "objectID": "ttest/ttest.html#not-exactly",
+    "href": "ttest/ttest.html#not-exactly",
+    "title": "Comparing 2 groups",
+    "section": "Not exactly…",
+    "text": "Not exactly…"
+  },
+  {
+    "objectID": "ttest/ttest.html#we-need-to-know",
+    "href": "ttest/ttest.html#we-need-to-know",
+    "title": "Comparing 2 groups",
+    "section": "We need to know:",
+    "text": "We need to know:\n\nis the difference real?\nsize of the difference?"
+  },
+  {
+    "objectID": "ttest/ttest.html#hands-on-exercises",
+    "href": "ttest/ttest.html#hands-on-exercises",
+    "title": "Comparing 2 groups",
+    "section": "Hands on exercises",
+    "text": "Hands on exercises\nGet ready!\n\nDownload data from teams"
+  },
+  {
+    "objectID": "ttest/ttest.html#study",
+    "href": "ttest/ttest.html#study",
+    "title": "Comparing 2 groups",
+    "section": "Study",
+    "text": "Study\n\n\nEffect of ADHD on planning ability\n\nVariables\n\nADHD\n\nhealthy\nADHD\n\nPlannig: Standardized test\n\n\n\n\nStandardized tests: mean? SD?"
+  },
+  {
+    "objectID": "ttest/ttest.html#hypothesis",
+    "href": "ttest/ttest.html#hypothesis",
+    "title": "Comparing 2 groups",
+    "section": "Hypothesis",
+    "text": "Hypothesis\n\nH0: No effect\nH1: Effect\n\n\n\nH0: Hardheaded"
+  },
+  {
+    "objectID": "ttest/ttest.html#info-needed",
+    "href": "ttest/ttest.html#info-needed",
+    "title": "Comparing 2 groups",
+    "section": "Info needed",
+    "text": "Info needed\n\n\n\nEffect size\n\n\n\nStatistical significance\n\n\n\n\nWhat are these?"
+  },
+  {
+    "objectID": "ttest/ttest.html#viz",
+    "href": "ttest/ttest.html#viz",
+    "title": "Comparing 2 groups",
+    "section": "Viz",
+    "text": "Viz\n\n\n\nBar plot\n\n\n\nBox plot\n\n\n\n\n\nWhich provides more info?\nWhy use both? More info = better"
+  },
+  {
+    "objectID": "ttest/ttest.html#descriptive-stats",
+    "href": "ttest/ttest.html#descriptive-stats",
+    "title": "Comparing 2 groups",
+    "section": "Descriptive stats",
+    "text": "Descriptive stats\n\nbasic\ndetailed\n\n\n\ngroup data\ndetailed: mean, median, SD, Range"
+  },
+  {
+    "objectID": "ttest/ttest.html#interpretation",
+    "href": "ttest/ttest.html#interpretation",
+    "title": "Comparing 2 groups",
+    "section": "Interpretation",
+    "text": "Interpretation"
+  },
+  {
+    "objectID": "ttest/ttest.html#effect-size",
+    "href": "ttest/ttest.html#effect-size",
+    "title": "Comparing 2 groups",
+    "section": "Effect size",
+    "text": "Effect size"
+  },
+  {
+    "objectID": "ttest/ttest.html#unstandardized",
+    "href": "ttest/ttest.html#unstandardized",
+    "title": "Comparing 2 groups",
+    "section": "Unstandardized",
+    "text": "Unstandardized\n\nMean difference\n95% CI\n\n\nDiff in raw scores?"
+  },
+  {
+    "objectID": "ttest/ttest.html#standardized",
+    "href": "ttest/ttest.html#standardized",
+    "title": "Comparing 2 groups",
+    "section": "Standardized",
+    "text": "Standardized\n\n\nIndicators\n\nHedges g\n95% CI\n\n\nInterpretation\n\nsmall: .2 - 0.49\nmedium: 0.5 - 0.79\nlarge: 0.8+\n\n\n\n\n\nDiff in terms of SD?\nWhy Hedges?"
+  },
+  {
+    "objectID": "ttest/ttest.html#statistical-significance",
+    "href": "ttest/ttest.html#statistical-significance",
+    "title": "Comparing 2 groups",
+    "section": "Statistical significance",
+    "text": "Statistical significance\n\n\nWhere to look\n\nEqual variances not assumed\nSignificance, two sided\n\n\nInterpretation\n\np-value < 0.05 = Statistical significant\np-value > 0.05 = not statistical significant"
+  },
+  {
+    "objectID": "ttest/ttest.html#assumptions-1",
+    "href": "ttest/ttest.html#assumptions-1",
+    "title": "Comparing 2 groups",
+    "section": "Assumptions",
+    "text": "Assumptions\n\nTypes of variables (GLM)\nNormal distribution\nHomegeinity of variance (Welch’s test) - not important\nNo outliers\n\n\nWhat are assumptions?"
+  },
+  {
+    "objectID": "ttest/ttest.html#recap",
+    "href": "ttest/ttest.html#recap",
+    "title": "Comparing 2 groups",
+    "section": "Recap",
+    "text": "Recap\n\nWhat analysis?\nUsefulness?\nPredictor type?\nType of outcome?\nPieces of info t-tests provide?\nAssumptions?\n\n\n\nt test\ncompare means\ncategorical\nnumeric\nES, stats sig\nvar types, normal distribution, homo variances, outliers"
+  },
+  {
+    "objectID": "ttest/ttest.html#questions",
+    "href": "ttest/ttest.html#questions",
+    "title": "Comparing 2 groups",
+    "section": "Questions?",
+    "text": "Questions?\n\n\nWhat was easiest?\nWhat was hardest?"
+  },
+  {
+    "objectID": "glm/glm.html#objectives",
+    "href": "glm/glm.html#objectives",
+    "title": "General Linear Model (GLM)",
+    "section": "Objectives",
+    "text": "Objectives\n\n\nUnderstand the basic concepts of the GLM\nUnderstand the usefulness of the GLM\nUnderstand how the GLM underlies most stats methods\nUnderstand the basic process of applying the GLM"
+  },
+  {
+    "objectID": "glm/glm.html#form",
+    "href": "glm/glm.html#form",
+    "title": "General Linear Model (GLM)",
+    "section": "Form",
+    "text": "Form"
+  },
+  {
+    "objectID": "glm/glm.html#examples",
+    "href": "glm/glm.html#examples",
+    "title": "General Linear Model (GLM)",
+    "section": "Examples",
+    "text": "Examples\n\n\n\n\n\nAttention -> WM\nArt -> Sustained attention\nADHD -> Innatention\nCeliac disease -> Processing speed\nIntervention -> Selective attention\nMusical training -> EF\n\n\n\n\nFamiliar? - Regression"
+  },
+  {
+    "objectID": "glm/glm.html#form-1",
+    "href": "glm/glm.html#form-1",
+    "title": "General Linear Model (GLM)",
+    "section": "Form",
+    "text": "Form\n\n\n\n\n\n𝑂𝑢𝑡𝑐𝑜𝑚𝑒 = (𝑃𝑟𝑒𝑑𝑖𝑐𝑡𝑜𝑟)\n𝑂𝑢𝑡𝑐𝑜𝑚𝑒 = (𝑃𝑟𝑒𝑑𝑖𝑐𝑡𝑜𝑟) + error\nY =(𝛽) + 𝜀\nY = (𝛽0 + 𝛽1) + 𝜀\nY = (𝛽0 + 𝛽1 + 𝛽2) + 𝜀"
+  },
+  {
+    "objectID": "glm/glm.html#study-effects",
+    "href": "glm/glm.html#study-effects",
+    "title": "General Linear Model (GLM)",
+    "section": "Study effects",
+    "text": "Study effects\n\n\n\n\n\nRelationship\nDifference between groups\n\n\n\n\nWhat does a difference mean?"
+  },
+  {
+    "objectID": "glm/glm.html#usefulness",
+    "href": "glm/glm.html#usefulness",
+    "title": "General Linear Model (GLM)",
+    "section": "Usefulness",
+    "text": "Usefulness\n\n\n\n\n\nExistence: statistical significance\nSize: effect size, parameter"
+  },
+  {
+    "objectID": "glm/glm.html#lets-see-the-variables",
+    "href": "glm/glm.html#lets-see-the-variables",
+    "title": "General Linear Model (GLM)",
+    "section": "Lets see the variables",
+    "text": "Lets see the variables"
+  },
+  {
+    "objectID": "glm/glm.html#phonological-loop-span",
+    "href": "glm/glm.html#phonological-loop-span",
+    "title": "General Linear Model (GLM)",
+    "section": "Phonological loop span",
+    "text": "Phonological loop span"
+  },
+  {
+    "objectID": "glm/glm.html#ready",
+    "href": "glm/glm.html#ready",
+    "title": "General Linear Model (GLM)",
+    "section": "Ready?",
+    "text": "Ready?\n\nVolunteer"
+  },
+  {
+    "objectID": "glm/glm.html#section",
+    "href": "glm/glm.html#section",
+    "title": "General Linear Model (GLM)",
+    "section": "8",
+    "text": "8"
+  },
+  {
+    "objectID": "glm/glm.html#section-1",
+    "href": "glm/glm.html#section-1",
+    "title": "General Linear Model (GLM)",
+    "section": "4",
+    "text": "4"
+  },
+  {
+    "objectID": "glm/glm.html#section-2",
+    "href": "glm/glm.html#section-2",
+    "title": "General Linear Model (GLM)",
+    "section": "0",
+    "text": "0"
+  },
+  {
+    "objectID": "glm/glm.html#section-3",
+    "href": "glm/glm.html#section-3",
+    "title": "General Linear Model (GLM)",
+    "section": "3",
+    "text": "3"
+  },
+  {
+    "objectID": "glm/glm.html#section-4",
+    "href": "glm/glm.html#section-4",
+    "title": "General Linear Model (GLM)",
+    "section": "7",
+    "text": "7"
+  },
+  {
+    "objectID": "glm/glm.html#section-5",
+    "href": "glm/glm.html#section-5",
+    "title": "General Linear Model (GLM)",
+    "section": "1",
+    "text": "1"
+  },
+  {
+    "objectID": "glm/glm.html#section-6",
+    "href": "glm/glm.html#section-6",
+    "title": "General Linear Model (GLM)",
+    "section": "2",
+    "text": "2"
+  },
+  {
+    "objectID": "glm/glm.html#numbers",
+    "href": "glm/glm.html#numbers",
+    "title": "General Linear Model (GLM)",
+    "section": "Numbers?",
+    "text": "Numbers?\n\n8 4 0 3 7 1 2"
+  },
+  {
+    "objectID": "glm/glm.html#selective-attention",
+    "href": "glm/glm.html#selective-attention",
+    "title": "General Linear Model (GLM)",
+    "section": "Selective attention",
+    "text": "Selective attention"
+  },
+  {
+    "objectID": "glm/glm.html#ready-1",
+    "href": "glm/glm.html#ready-1",
+    "title": "General Linear Model (GLM)",
+    "section": "Ready?",
+    "text": "Ready?\n\nStroop task\nBottom up, left to right"
+  },
+  {
+    "objectID": "glm/glm.html#go",
+    "href": "glm/glm.html#go",
+    "title": "General Linear Model (GLM)",
+    "section": "Go",
+    "text": "Go"
+  },
+  {
+    "objectID": "glm/glm.html#first-there-were-data",
+    "href": "glm/glm.html#first-there-were-data",
+    "title": "General Linear Model (GLM)",
+    "section": "First, there were data",
+    "text": "First, there were data\n\n\nTip: 2 centers = 2 pops"
+  },
+  {
+    "objectID": "glm/glm.html#differences-between-2-groups",
+    "href": "glm/glm.html#differences-between-2-groups",
+    "title": "General Linear Model (GLM)",
+    "section": "Differences between 2 groups?",
+    "text": "Differences between 2 groups?"
+  },
+  {
+    "objectID": "glm/glm.html#process",
+    "href": "glm/glm.html#process",
+    "title": "General Linear Model (GLM)",
+    "section": "Process",
+    "text": "Process"
+  },
+  {
+    "objectID": "glm/glm.html#group-by-attentional-level",
+    "href": "glm/glm.html#group-by-attentional-level",
+    "title": "General Linear Model (GLM)",
+    "section": "Group by attentional level",
+    "text": "Group by attentional level"
+  },
+  {
+    "objectID": "glm/glm.html#estimate-mean",
+    "href": "glm/glm.html#estimate-mean",
+    "title": "General Linear Model (GLM)",
+    "section": "Estimate mean",
+    "text": "Estimate mean\n\n\nWhy the mean?"
+  },
+  {
+    "objectID": "glm/glm.html#estimate-relationship-difference",
+    "href": "glm/glm.html#estimate-relationship-difference",
+    "title": "General Linear Model (GLM)",
+    "section": "Estimate relationship (difference)",
+    "text": "Estimate relationship (difference)\n\n\nCompare 2 means? - t-test\nLine?\nLine not in regression??"
+  },
+  {
+    "objectID": "glm/glm.html#glm-form",
+    "href": "glm/glm.html#glm-form",
+    "title": "General Linear Model (GLM)",
+    "section": "GLM form",
+    "text": "GLM form"
+  },
+  {
+    "objectID": "glm/glm.html#glm-analysis",
+    "href": "glm/glm.html#glm-analysis",
+    "title": "General Linear Model (GLM)",
+    "section": "GLM analysis",
+    "text": "GLM analysis\n\n\n\nCall:\nlm(formula = wm_span ~ group, data = data_2_groups)\n\nResiduals:\n    Min      1Q  Median      3Q     Max \n-2.7176 -0.8008  0.1270  0.6442  2.3197 \n\nCoefficients:\n                      Estimate Std. Error t value Pr(>|t|)    \n(Intercept)            3.98899    0.09836   40.55   <2e-16 ***\ngroupnormal attention  4.87359    0.13910   35.03   <2e-16 ***\n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\nResidual standard error: 0.9836 on 198 degrees of freedom\nMultiple R-squared:  0.8611,    Adjusted R-squared:  0.8604 \nF-statistic:  1227 on 1 and 198 DF,  p-value: < 2.2e-16\n\n\n\nfamiliar output?"
+  },
+  {
+    "objectID": "glm/glm.html#a-step-further",
+    "href": "glm/glm.html#a-step-further",
+    "title": "General Linear Model (GLM)",
+    "section": "A step further…",
+    "text": "A step further…"
+  },
+  {
+    "objectID": "glm/glm.html#differences-between-4-groups",
+    "href": "glm/glm.html#differences-between-4-groups",
+    "title": "General Linear Model (GLM)",
+    "section": "Differences between 4 groups",
+    "text": "Differences between 4 groups"
+  },
+  {
+    "objectID": "glm/glm.html#process-1",
+    "href": "glm/glm.html#process-1",
+    "title": "General Linear Model (GLM)",
+    "section": "Process",
+    "text": "Process"
+  },
+  {
+    "objectID": "glm/glm.html#group-by-attentional-level-1",
+    "href": "glm/glm.html#group-by-attentional-level-1",
+    "title": "General Linear Model (GLM)",
+    "section": "Group by attentional level",
+    "text": "Group by attentional level"
+  },
+  {
+    "objectID": "glm/glm.html#estimate-mean-1",
+    "href": "glm/glm.html#estimate-mean-1",
+    "title": "General Linear Model (GLM)",
+    "section": "Estimate mean",
+    "text": "Estimate mean"
+  },
+  {
+    "objectID": "glm/glm.html#estimate-relationship-difference-1",
+    "href": "glm/glm.html#estimate-relationship-difference-1",
+    "title": "General Linear Model (GLM)",
+    "section": "Estimate relationship (difference)",
+    "text": "Estimate relationship (difference)\n\n\nCompare 4 means? - ANOVA\nLine?"
+  },
+  {
+    "objectID": "glm/glm.html#glm-form-1",
+    "href": "glm/glm.html#glm-form-1",
+    "title": "General Linear Model (GLM)",
+    "section": "GLM form",
+    "text": "GLM form"
+  },
+  {
+    "objectID": "glm/glm.html#glm-form-2-vs-4-groups",
+    "href": "glm/glm.html#glm-form-2-vs-4-groups",
+    "title": "General Linear Model (GLM)",
+    "section": "GLM form 2 vs 4 groups",
+    "text": "GLM form 2 vs 4 groups\n\n\n\n\n\n\n\n\nDifference?"
+  },
+  {
+    "objectID": "glm/glm.html#glm-analysis-1",
+    "href": "glm/glm.html#glm-analysis-1",
+    "title": "General Linear Model (GLM)",
+    "section": "GLM analysis",
+    "text": "GLM analysis\n\n\n\nCall:\nlm(formula = wm_span ~ group, data = data_4_groups)\n\nResiduals:\n    Min      1Q  Median      3Q     Max \n-2.5487 -0.6404 -0.0847  0.6211  2.7641 \n\nCoefficients:\n                            Estimate Std. Error t value Pr(>|t|)    \n(Intercept)                  2.98500    0.09691   30.80   <2e-16 ***\ngroupmild attention deficit  2.00399    0.13705   14.62   <2e-16 ***\ngroupnormal attention        4.05804    0.13705   29.61   <2e-16 ***\ngroupsuperior attention      8.16936    0.13705   59.61   <2e-16 ***\n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\nResidual standard error: 0.9691 on 396 degrees of freedom\nMultiple R-squared:  0.9077,    Adjusted R-squared:  0.907 \nF-statistic:  1299 on 3 and 396 DF,  p-value: < 2.2e-16\n\n\n\nsevere deficit as baseline"
+  },
+  {
+    "objectID": "glm/glm.html#a-step-further-1",
+    "href": "glm/glm.html#a-step-further-1",
+    "title": "General Linear Model (GLM)",
+    "section": "A step further…",
+    "text": "A step further…"
+  },
+  {
+    "objectID": "glm/glm.html#attention-and-wm",
+    "href": "glm/glm.html#attention-and-wm",
+    "title": "General Linear Model (GLM)",
+    "section": "Attention and WM",
+    "text": "Attention and WM\nEstimate relationship\n\n\n\n\n\ngraph type?"
+  },
+  {
+    "objectID": "glm/glm.html#estimate-relationship-line",
+    "href": "glm/glm.html#estimate-relationship-line",
+    "title": "General Linear Model (GLM)",
+    "section": "Estimate relationship line",
+    "text": "Estimate relationship line\n\n\nRelationships 2 numeric variables? - Correlation/Regression"
+  },
+  {
+    "objectID": "glm/glm.html#glm-form-2",
+    "href": "glm/glm.html#glm-form-2",
+    "title": "General Linear Model (GLM)",
+    "section": "GLM form",
+    "text": "GLM form"
+  },
+  {
+    "objectID": "glm/glm.html#glm-analysis-2",
+    "href": "glm/glm.html#glm-analysis-2",
+    "title": "General Linear Model (GLM)",
+    "section": "GLM analysis",
+    "text": "GLM analysis\n\n\n\nCall:\nlm(formula = wm ~ attention, data = data_cont_vars)\n\nResiduals:\n    Min      1Q  Median      3Q     Max \n-3.5767 -1.0112  0.1610  0.8468  4.2660 \n\nCoefficients:\n            Estimate Std. Error t value Pr(>|t|)    \n(Intercept)   1.8842     0.6609   2.851  0.00532 ** \nattention     0.1259     0.0165   7.631 1.54e-11 ***\n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\nResidual standard error: 1.523 on 98 degrees of freedom\nMultiple R-squared:  0.3727,    Adjusted R-squared:  0.3663 \nF-statistic: 58.24 on 1 and 98 DF,  p-value: 1.539e-11"
+  },
+  {
+    "objectID": "glm/glm.html#summary-of-models",
+    "href": "glm/glm.html#summary-of-models",
+    "title": "General Linear Model (GLM)",
+    "section": "Summary of models",
+    "text": "Summary of models\n\n\n\n\n\n\n\n\n\n\n  \n\n\n\n\n\n\nDifference?\nNumeric = More levels\nMore levels = More info"
+  },
+  {
+    "objectID": "glm/glm.html#conclusions",
+    "href": "glm/glm.html#conclusions",
+    "title": "General Linear Model (GLM)",
+    "section": "Conclusions",
+    "text": "Conclusions\n\nGLM underlies most stats methods\nSimple but powerful idea\nUse variables to predict variables\nEffects = relationships, differences"
+  },
+  {
+    "objectID": "glm/glm.html#questions-or-comments",
+    "href": "glm/glm.html#questions-or-comments",
+    "title": "General Linear Model (GLM)",
+    "section": "Questions or Comments",
+    "text": "Questions or Comments"
+  },
+  {
+    "objectID": "glm/glm.html#further-resources",
+    "href": "glm/glm.html#further-resources",
+    "title": "General Linear Model (GLM)",
+    "section": "Further resources",
+    "text": "Further resources\n\nAndy Field Lectures - YouTube\nField, A. (2017). Discovering Statistics Using IBM SPSS Statistics (5th ed.). London: Sage Publications. Chapter 2."
+  },
+  {
+    "objectID": "glm/glm.html#bonus",
+    "href": "glm/glm.html#bonus",
+    "title": "General Linear Model (GLM)",
+    "section": "Bonus",
+    "text": "Bonus\n\n\n\n\nAlways GLM"
+  },
+  {
+    "objectID": "glm/glm.html#glm-subtypes",
+    "href": "glm/glm.html#glm-subtypes",
+    "title": "General Linear Model (GLM)",
+    "section": "GLM subtypes",
+    "text": "GLM subtypes"
+  }
+]
