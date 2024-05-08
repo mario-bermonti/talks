@@ -4,8 +4,6 @@ author: "Mario E. Bermonti-Pérez, MA, PhD"
 format: 
     revealjs:
         incremental: true 
-        chalkboard: true 
-        theme: dark
         center: true
     # pdf:
     #     echo: false
