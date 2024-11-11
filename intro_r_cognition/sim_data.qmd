@@ -1,0 +1,109 @@
+---
+title: "Simuldate data for workshop"
+format: 
+    html:
+        df-print: kable
+---
+
+## Setup
+
+```{r}
+library(faux)
+library(tidyverse)
+library(ggplot2)
+library(here)
+set.seed(34)
+```
+
+## Simulate data
+### DSF
+
+```{r}
+between <- list(group = c("healthy", "depression"))
+means <- list(
+c("healthy" = 5.67, "depression" = 4.80)
+)
+sds <- list(
+    c("healthy" = 0.24, "depression" = 0.89)
+)
+
+data_dsf <- sim_design(
+    between = between,
+    mu = means,
+    sd = sds,
+    n = 30,
+    dv = "digit_span_forward"
+)
+head(data_dsf)
+str(data_dsf)
+```
+
+### DSB
+
+```{r}
+between <- list(group = c("healthy", "depression"))
+means <- list(
+c("healthy" = 4.17, "depression" = 3.23)
+)
+sds <- list(
+    c("healthy" = 0.30, "depression" = 0.14)
+)
+
+data_dsb <- sim_design(
+    between = between,
+    mu = means,
+    sd = sds,
+    n = 30,
+    dv = "digit_span_backward"
+)
+head(data_dsb)
+str(data_dsb)
+```
+
+### Merge data
+
+```{r}
+data <- merge(
+    data_dsf, 
+    data_dsb[, c("id", "digit_span_backward")],
+    by = "id"
+)
+head(data)
+dim(data)
+```
+
+## Format data
+
+```{r}
+data <- data |>
+    mutate(
+        across(
+            where(is.numeric),
+            round,
+            0
+        )
+    )
+head(data)
+```
+
+## Check data
+
+```{r}
+data |>
+    group_by(group) |>
+    summarise(
+        mean_dsf = mean(digit_span_forward),
+        sd_dsf = sd(digit_span_forward),
+        mean_dsb = mean(digit_span_backward),
+        sd_dsb = sd(digit_span_backward)
+    )
+```
+
+## Save data
+
+
+```{r}
+path_data <- here('intro_r_cognition/data.csv')
+data |>
+    write_csv(path_data)
+```
