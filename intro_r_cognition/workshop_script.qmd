@@ -5,19 +5,68 @@ format:
         df-print: kable
 ---
 
+## Setup
+
+```{r}
+library(tidyverse)
+```
+
 ## Read data
 
+```{r}
+data <- read_csv("https://raw.githubusercontent.com/mario-bermonti/talks/refs/heads/main/intro_r_cognition/data.csv")
+```
+
 ## Inspect the data
+
+```{r}
+head(data)
+```
+
+```{r}
+dim(data)
+```
+
+```{r}
+str(data)
+```
 
 ## Effect of MDD on digit span forward
 
 ### Viz
 
-#### Bar plot
-
 #### Box plot
 
+##### Basic 
+```{r}
+boxplot(digit_span_forward ~ group, data)
+```
+
+##### Advanced (more powerful)
+```{r}
+ggplot(
+    data,
+    aes(x = group, y = digit_span_forward)
+) +
+geom_boxplot()
+```
+
 #### Violin plot
+
+#### Bar plot
+
+##### Basic
+
+```{r}
+
+```
+
+##### Advanced (more powerful)
+
+```{r}
+barplot(digit_span_forward ~ group, data = data, FUN = mean)
+```
+
 
 ### Descriptive stats
 
