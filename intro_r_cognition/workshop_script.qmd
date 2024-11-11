@@ -1,0 +1,28 @@
+---
+title: "Script that will be developed during the workshop"
+format: 
+    html:
+        df-print: kable
+---
+
+## Read data
+
+## Inspect the data
+
+## Effect of MDD on digit span forward
+
+### Viz
+
+#### Bar plot
+
+#### Box plot
+
+#### Violin plot
+
+### Descriptive stats
+
+#### General
+
+#### By group
+
+### Inferential
