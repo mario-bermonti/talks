@@ -7,11 +7,11 @@
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
 <link href="../site_libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.4.554">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.5.57">
 
   <meta name="author" content="Mario E. Bermonti-Pérez, MA, PhD">
-  <title>Talks - General Linear Model (GLM)</title>
+  <title>Talks – General Linear Model (GLM)</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -34,8 +34,6 @@
   <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
-  <link href="../site_libs/revealjs/plugin/reveal-chalkboard/font-awesome/css/all.css" rel="stylesheet">
-  <link href="../site_libs/revealjs/plugin/reveal-chalkboard/style.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
   <style type="text/css">
 
@@ -323,7 +321,7 @@
     }
   </style>
 </head>
-<body class="quarto-dark">
+<body class="quarto-light">
   <div class="reveal">
     <div class="slides">
 
@@ -385,8 +383,7 @@ Mario E. Bermonti-Pérez, MA, PhD
 <li class="fragment">Intervention -&gt; Selective attention</li>
 <li class="fragment">Musical training -&gt; EF</li>
 </ul>
-</div>
-</div>
+</div></div>
 <aside class="notes">
 <p>Familiar? - Regression</p>
 <style type="text/css">
@@ -414,8 +411,7 @@ Mario E. Bermonti-Pérez, MA, PhD
 <li class="fragment"><p>Y = (𝛽0 + 𝛽1) + 𝜀</p></li>
 <li class="fragment"><p>Y = (𝛽0 + 𝛽1 + 𝛽2) + 𝜀</p></li>
 </ul>
-</div>
-</div>
+</div></div>
 </section>
 <section id="study-effects" class="slide level2 center">
 <h2>Study effects</h2>
@@ -427,8 +423,7 @@ Mario E. Bermonti-Pérez, MA, PhD
 <li class="fragment">Relationship</li>
 <li class="fragment">Difference between groups</li>
 </ul>
-</div>
-</div>
+</div></div>
 <aside class="notes">
 <p>What does a difference mean?</p>
 <style type="text/css">
@@ -453,8 +448,7 @@ Mario E. Bermonti-Pérez, MA, PhD
 <li class="fragment">Existence: statistical significance</li>
 <li class="fragment">Size: effect size, parameter</li>
 </ul>
-</div>
-</div>
+</div></div>
 </section></section>
 <section>
 <section id="glm-with-different-variables" class="title-slide slide level1 center">
@@ -626,19 +620,19 @@ Call:
 lm(formula = wm_span ~ group, data = data_2_groups)
 
 Residuals:
-    Min      1Q  Median      3Q     Max 
--2.7176 -0.8008  0.1270  0.6442  2.3197 
+     Min       1Q   Median       3Q      Max 
+-3.05401 -0.61080 -0.05727  0.63912  2.96147 
 
 Coefficients:
                       Estimate Std. Error t value Pr(&gt;|t|)    
-(Intercept)            3.98899    0.09836   40.55   &lt;2e-16 ***
-groupnormal attention  4.87359    0.13910   35.03   &lt;2e-16 ***
+(Intercept)            3.84779    0.09567   40.22   &lt;2e-16 ***
+groupnormal attention  5.08010    0.13530   37.55   &lt;2e-16 ***
 ---
 Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
 
-Residual standard error: 0.9836 on 198 degrees of freedom
-Multiple R-squared:  0.8611,    Adjusted R-squared:  0.8604 
-F-statistic:  1227 on 1 and 198 DF,  p-value: &lt; 2.2e-16</code></pre>
+Residual standard error: 0.9567 on 198 degrees of freedom
+Multiple R-squared:  0.8769,    Adjusted R-squared:  0.8762 
+F-statistic:  1410 on 1 and 198 DF,  p-value: &lt; 2.2e-16</code></pre>
 </div>
 </div>
 <aside class="notes">
@@ -701,8 +695,7 @@ F-statistic:  1227 on 1 and 198 DF,  p-value: &lt; 2.2e-16</code></pre>
 <p><img data-src="./assets/4groups.png"></p>
 </div><div class="column" style="width:50%;">
 <p><img data-src="./assets/2groups.png"></p>
-</div>
-</div>
+</div></div>
 <aside class="notes">
 <p>Difference?</p>
 <style type="text/css">
@@ -727,20 +720,20 @@ lm(formula = wm_span ~ group, data = data_4_groups)
 
 Residuals:
     Min      1Q  Median      3Q     Max 
--2.5487 -0.6404 -0.0847  0.6211  2.7641 
+-2.8404 -0.6449  0.0835  0.6479  3.4329 
 
 Coefficients:
                             Estimate Std. Error t value Pr(&gt;|t|)    
-(Intercept)                  2.98500    0.09691   30.80   &lt;2e-16 ***
-groupmild attention deficit  2.00399    0.13705   14.62   &lt;2e-16 ***
-groupnormal attention        4.05804    0.13705   29.61   &lt;2e-16 ***
-groupsuperior attention      8.16936    0.13705   59.61   &lt;2e-16 ***
+(Intercept)                   2.8786     0.1005   28.64   &lt;2e-16 ***
+groupmild attention deficit   2.1620     0.1421   15.21   &lt;2e-16 ***
+groupnormal attention         4.0229     0.1421   28.30   &lt;2e-16 ***
+groupsuperior attention       8.0070     0.1421   56.33   &lt;2e-16 ***
 ---
 Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
 
-Residual standard error: 0.9691 on 396 degrees of freedom
-Multiple R-squared:  0.9077,    Adjusted R-squared:  0.907 
-F-statistic:  1299 on 3 and 396 DF,  p-value: &lt; 2.2e-16</code></pre>
+Residual standard error: 1.005 on 396 degrees of freedom
+Multiple R-squared:  0.8964,    Adjusted R-squared:  0.8956 
+F-statistic:  1142 on 3 and 396 DF,  p-value: &lt; 2.2e-16</code></pre>
 </div>
 </div>
 <aside class="notes">
@@ -814,18 +807,18 @@ lm(formula = wm ~ attention, data = data_cont_vars)
 
 Residuals:
     Min      1Q  Median      3Q     Max 
--3.5767 -1.0112  0.1610  0.8468  4.2660 
+-3.1198 -1.2489 -0.0926  1.1942  4.1717 
 
 Coefficients:
             Estimate Std. Error t value Pr(&gt;|t|)    
-(Intercept)   1.8842     0.6609   2.851  0.00532 ** 
-attention     0.1259     0.0165   7.631 1.54e-11 ***
+(Intercept)   2.3204     0.7044   3.294  0.00137 ** 
+attention     0.1145     0.0173   6.616 1.96e-09 ***
 ---
 Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
 
-Residual standard error: 1.523 on 98 degrees of freedom
-Multiple R-squared:  0.3727,    Adjusted R-squared:  0.3663 
-F-statistic: 58.24 on 1 and 98 DF,  p-value: 1.539e-11</code></pre>
+Residual standard error: 1.641 on 98 degrees of freedom
+Multiple R-squared:  0.3087,    Adjusted R-squared:  0.3017 
+F-statistic: 43.77 on 1 and 98 DF,  p-value: 1.965e-09</code></pre>
 </div>
 </div>
 </section>
@@ -835,6 +828,9 @@ F-statistic: 58.24 on 1 and 98 DF,  p-value: 1.539e-11</code></pre>
 <div class="column" style="width:40%;">
 <p><img data-src="./assets/glm.png" id="general"></p>
 </div><div class="column" style="width:60%;">
+<div>
+
+</div>
 <div class="quarto-layout-panel" data-layout-nrow="1">
 <div class="quarto-layout-row">
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
@@ -847,8 +843,7 @@ F-statistic: 58.24 on 1 and 98 DF,  p-value: 1.539e-11</code></pre>
 </div>
 </div>
 </div>
-</div>
-</div>
+</div></div>
 <aside class="notes">
 <p>Difference?</p>
 <p>Numeric = More levels</p>
@@ -899,8 +894,7 @@ F-statistic: 58.24 on 1 and 98 DF,  p-value: 1.539e-11</code></pre>
 </ul>
 </div><div class="column" style="width:60%;">
 <p><img data-src="./assets/glm_always.jpeg"></p>
-</div>
-</div>
+</div></div>
 </div>
 </section>
 <section id="glm-subtypes" class="slide level2 center">
@@ -923,7 +917,6 @@ F-statistic: 58.24 on 1 and 98 DF,  p-value: 1.539e-11</code></pre>
   <script src="../site_libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
   <script src="../site_libs/revealjs/plugin/reveal-menu/menu.js"></script>
   <script src="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
-  <script src="../site_libs/revealjs/plugin/reveal-chalkboard/plugin.js"></script>
   <script src="../site_libs/revealjs/plugin/quarto-support/support.js"></script>
   
 
@@ -944,8 +937,7 @@ F-statistic: 58.24 on 1 and 98 DF,  p-value: 1.539e-11</code></pre>
 'autoAnimateEasing': "ease",
 'autoAnimateDuration': 1,
 'autoAnimateUnmatched': true,
-'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleChalkboard(event)\"><kbd>b</kbd> Toggle Chalkboard</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleNotesCanvas(event)\"><kbd>c</kbd> Toggle Notes Canvas</a></li>\n<li class=\"slide-tool-item\" data-item=\"6\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.downloadDrawings(event)\"><kbd>d</kbd> Download Drawings</a></li>\n<li class=\"slide-tool-item\" data-item=\"7\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
-'chalkboard': {"buttons":true},
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
 'smaller': false,
  
         // Display controls in the bottom right corner
@@ -1116,7 +1108,7 @@ F-statistic: 58.24 on 1 and 98 DF,  p-value: 1.539e-11</code></pre>
         },
 
         // reveal.js plugins
-        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, RevealChalkboard, QuartoSupport,
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, QuartoSupport,
 
           RevealMath,
           RevealNotes,
@@ -1199,18 +1191,7 @@ F-statistic: 58.24 on 1 and 98 DF,  p-value: 1.539e-11</code></pre>
         }
         return false;
       }
-      const clipboard = new window.ClipboardJS('.code-copy-button', {
-        text: function(trigger) {
-          const codeEl = trigger.previousElementSibling.cloneNode(true);
-          for (const childEl of codeEl.children) {
-            if (isCodeAnnotation(childEl)) {
-              childEl.remove();
-            }
-          }
-          return codeEl.innerText;
-        }
-      });
-      clipboard.on('success', function(e) {
+      const onCopySuccess = function(e) {
         // button target
         const button = e.trigger;
         // don't keep focus
@@ -1242,7 +1223,29 @@ F-statistic: 58.24 on 1 and 98 DF,  p-value: 1.539e-11</code></pre>
         }, 1000);
         // clear code selection
         e.clearSelection();
+      }
+      const getTextToCopy = function(trigger) {
+          const codeEl = trigger.previousElementSibling.cloneNode(true);
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
+            }
+          }
+          return codeEl.innerText;
+      }
+      const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+        text: getTextToCopy
       });
+      clipboard.on('success', onCopySuccess);
+      if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+        // For code content inside modals, clipBoardJS needs to be initialized with a container option
+        // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+        const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+          text: getTextToCopy,
+          container: window.document.getElementById('quarto-embedded-source-code-modal')
+        });
+        clipboardModal.on('success', onCopySuccess);
+      }
         var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
         var mailtoRegex = new RegExp(/^mailto:/);
           var filterRegex = new RegExp("https:\/\/mario-bermonti\.github\.io\/talks\/");
@@ -1250,7 +1253,7 @@ F-statistic: 58.24 on 1 and 98 DF,  p-value: 1.539e-11</code></pre>
             return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
         }
         // Inspect non-navigation links and adorn them if external
-     	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+     	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
         for (var i=0; i<links.length; i++) {
           const link = links[i];
           if (!isInternal(link.href)) {
