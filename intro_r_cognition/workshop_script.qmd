@@ -35,17 +35,15 @@ str(data)
 ```
 
 ## Effect of MDD on digit span forward
-
 ### Viz
-
 #### Box plot
-
 ##### Basic 
 ```{r}
 boxplot(digit_span_forward ~ group, data)
 ```
 
 ##### Advanced (more powerful)
+
 ```{r}
 ggplot(
     data,
@@ -55,8 +53,6 @@ geom_boxplot()
 ```
 
 #### Bar plot
-
-
 Let's calculate the means we will plot
 
 ```{r}
@@ -89,7 +85,6 @@ geom_bar(stat = "identity")
 #### Violin plot
 
 ```{r}
-library(see)
 ggplot(
     data,
     aes(x = group, y = digit_span_forward)
@@ -98,7 +93,6 @@ geom_violindot()
 ```
 
 ### Descriptive stats
-
 #### General
 
 ```{r}
@@ -127,11 +121,15 @@ data |>
 ### Inferential
 
 ```{r}
-library(broom)
-t_test_results <- t.test(
+results_ttest <- t.test(
     digit_span_forward ~ group,
     data = data
 )
 
-tidy(t_test_results)
+tidy(results_ttest)   
+```
+
+```{r}
+hedges_g(results_ttest)
+```
 ```
