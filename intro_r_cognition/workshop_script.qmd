@@ -132,4 +132,103 @@ tidy(results_ttest)
 ```{r}
 hedges_g(results_ttest)
 ```
+
+## Effect of MDD on digit span backward
+### Viz
+#### Box plot
+##### Basic 
+```{r}
+boxplot(digit_span_backward ~ group, data)
+```
+
+##### Advanced (more powerful)
+
+```{r}
+ggplot(
+    data,
+    aes(x = group, y = digit_span_backward)
+) +
+geom_boxplot()
+```
+
+#### Bar plot
+
+Let's calculate the means we will plot
+
+```{r}
+means <- data |>
+    group_by(group) |>
+    summarise(
+        mean_dsb = mean(digit_span_backward),
+        mean_dsb = mean(digit_span_backward)
+    )
+
+means
+```
+
+##### Basic
+
+```{r}
+barplot(mean_dsb ~ group, data = means)
+```
+
+##### Advanced (more powerful)
+
+```{r}
+ggplot(
+    data = means,
+    aes(x = group, y = mean_dsb)
+) + 
+geom_bar(stat = "identity")
+```
+
+#### Violin plot
+
+```{r}
+ggplot(
+    data,
+    aes(x = group, y = digit_span_backward)
+) + 
+geom_violindot()
+```
+
+### Descriptive stats
+#### General
+
+```{r}
+data |>
+    summarise(
+        mean_dsb = mean(digit_span_backward),
+        sd_dsb = sd(digit_span_backward),
+        min_dsb = min(digit_span_backward),
+        max_dsb = max(digit_span_backward)
+    )
+```
+
+#### By group
+
+```{r}
+data |>
+    group_by(group) |>
+    summarise(
+        mean_dsb = mean(digit_span_backward),
+        sd_dsb = sd(digit_span_backward),
+        min_dsb = min(digit_span_backward),
+        max_dsb = max(digit_span_backward)
+    )
+```
+
+### Inferential
+
+```{r}
+results_ttest <- t.test(
+    digit_span_backward ~ group,
+    data = data
+)
+
+tidy(results_ttest)   
+```
+
+```{r}
+hedges_g(results_ttest)
 ```
