@@ -9,6 +9,9 @@ format:
 
 ```{r}
 library(tidyverse)
+library(broom)
+library(easystats)
+library(effectsize)
 ```
 
 ## Read data
