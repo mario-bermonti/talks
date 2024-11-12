@@ -122,3 +122,13 @@ data |>
 ```
 
 ### Inferential
+
+```{r}
+library(broom)
+t_test_results <- t.test(
+    digit_span_forward ~ group,
+    data = data
+)
+
+tidy(t_test_results)
+```
