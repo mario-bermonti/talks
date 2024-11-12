@@ -51,22 +51,48 @@ ggplot(
 geom_boxplot()
 ```
 
-#### Violin plot
-
 #### Bar plot
+
+
+Let's calculate the means we will plot
+
+```{r}
+means <- data |>
+    group_by(group) |>
+    summarise(
+        mean_dsf = mean(digit_span_forward),
+        mean_dsb = mean(digit_span_backward)
+    )
+
+means
+```
 
 ##### Basic
 
 ```{r}
-
+barplot(mean_dsf ~ group, data = means)
 ```
 
 ##### Advanced (more powerful)
 
 ```{r}
-barplot(digit_span_forward ~ group, data = data, FUN = mean)
+ggplot(
+    data = means,
+    aes(x = group, y = mean_dsf)
+) + 
+geom_bar(stat = "identity")
 ```
 
+#### Violin plot
+
+```{r}
+library(see)
+ggplot(
+    data,
+    aes(x = group, y = digit_span_forward)
+) + 
+geom_violindot()
+```
 
 ### Descriptive stats
 
