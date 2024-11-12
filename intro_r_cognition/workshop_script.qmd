@@ -98,6 +98,27 @@ geom_violindot()
 
 #### General
 
+```{r}
+data |>
+    summarise(
+        mean_dsf = mean(digit_span_forward),
+        sd_dsf = sd(digit_span_forward),
+        min_dsf = min(digit_span_forward),
+        max_dsf = max(digit_span_forward)
+    )
+```
+
 #### By group
+
+```{r}
+data |>
+    group_by(group) |>
+    summarise(
+        mean_dsf = mean(digit_span_forward),
+        sd_dsf = sd(digit_span_forward),
+        min_dsf = min(digit_span_forward),
+        max_dsf = max(digit_span_forward)
+    )
+```
 
 ### Inferential
