@@ -21,17 +21,17 @@ set.seed(34)
 ```{r}
 between <- list(group = c("healthy", "depression"))
 means <- list(
-c("healthy" = 5.67, "depression" = 4.80)
+    c("healthy" = 6, "depression" = 5)
 )
 sds <- list(
-    c("healthy" = 0.24, "depression" = 0.89)
+    c("healthy" = 2, "depression" = 2)
 )
 
 data_dsf <- sim_design(
     between = between,
     mu = means,
     sd = sds,
-    n = 30,
+    n = 50,
     dv = "digit_span_forward"
 )
 head(data_dsf)
@@ -43,17 +43,17 @@ str(data_dsf)
 ```{r}
 between <- list(group = c("healthy", "depression"))
 means <- list(
-c("healthy" = 4.17, "depression" = 3.23)
+    c("healthy" = 5.5, "depression" = 4.5)
 )
 sds <- list(
-    c("healthy" = 0.30, "depression" = 0.14)
+    c("healthy" = 1.5, "depression" = 1.5)
 )
 
 data_dsb <- sim_design(
     between = between,
     mu = means,
     sd = sds,
-    n = 30,
+    n = 50,
     dv = "digit_span_backward"
 )
 head(data_dsb)
@@ -86,16 +86,38 @@ data <- data |>
 head(data)
 ```
 
+## Fix impossible values
+
+```{r}
+data <- data |>
+    mutate(
+        digit_span_forward = if_else(
+            digit_span_forward < 2,
+            2,
+            digit_span_forward
+        ),
+        digit_span_backward = if_else(
+            digit_span_backward < 2,
+            2,
+            digit_span_backward
+        ),
+    )
+```
+
 ## Check data
 
 ```{r}
 data |>
     group_by(group) |>
     summarise(
+        min_dsf = min(digit_span_forward),
         mean_dsf = mean(digit_span_forward),
         sd_dsf = sd(digit_span_forward),
+        max_dsf = max(digit_span_forward),
+        min_dsb = min(digit_span_backward),
         mean_dsb = mean(digit_span_backward),
-        sd_dsb = sd(digit_span_backward)
+        sd_dsb = sd(digit_span_backward),
+        max_dsb = max(digit_span_backward)
     )
 ```
 
