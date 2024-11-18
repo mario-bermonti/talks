@@ -37,12 +37,6 @@ str(data)
 ## Effect of MDD on digit span forward
 ### Viz
 #### Box plot
-##### Basic 
-```{r}
-boxplot(digit_span_forward ~ group, data)
-```
-
-##### Advanced (more powerful)
 
 ```{r}
 ggplot(
@@ -53,6 +47,7 @@ geom_boxplot()
 ```
 
 #### Bar plot
+
 Let's calculate the means we will plot
 
 ```{r}
@@ -66,13 +61,7 @@ means <- data |>
 means
 ```
 
-##### Basic
-
-```{r}
-barplot(mean_dsf ~ group, data = means)
-```
-
-##### Advanced (more powerful)
+Let's build the visualization
 
 ```{r}
 ggplot(
@@ -136,12 +125,6 @@ hedges_g(results_ttest)
 ## Effect of MDD on digit span backward
 ### Viz
 #### Box plot
-##### Basic 
-```{r}
-boxplot(digit_span_backward ~ group, data)
-```
-
-##### Advanced (more powerful)
 
 ```{r}
 ggplot(
@@ -166,13 +149,7 @@ means <- data |>
 means
 ```
 
-##### Basic
-
-```{r}
-barplot(mean_dsb ~ group, data = means)
-```
-
-##### Advanced (more powerful)
+Let's build the visualization
 
 ```{r}
 ggplot(
