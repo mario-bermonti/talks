@@ -119,7 +119,10 @@ tidy(results_ttest)
 ```
 
 ```{r}
-hedges_g(results_ttest)
+hedges_g(
+  data = data,
+  digit_span_forward ~ group
+)
 ```
 
 ## Effect of MDD on digit span backward
@@ -207,5 +210,8 @@ tidy(results_ttest)
 ```
 
 ```{r}
-hedges_g(results_ttest)
+hedges_g(
+  data = data,
+  digit_span_backward ~ group
+)
 ```
