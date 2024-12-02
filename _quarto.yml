@@ -9,6 +9,8 @@ website:
         text: GLM
       - href: ttest/ttest.qmd
         text: t-test
+      - href: intro_r_cognition/workshop_guide.qmd
+        text: intro-r-cognition
 
 format:
   html:

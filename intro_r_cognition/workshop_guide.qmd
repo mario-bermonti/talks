@@ -1,0 +1,133 @@
+---
+title: "Analyzing cognitive data using R"
+author:
+    - name: "Mario E. Bermonti-Pérez, PhD, MA"
+
+format: 
+    revealjs:
+        incremental: true
+        logo: "logo.png"
+        footer: "Cognition, Health, and Technology Lab"
+---
+
+# Intro
+[https://github.com/mario-bermonti/talks](https://github.com/mario-bermonti/talks)
+
+## Agenda
+
+- Why code?
+- Objectives
+- Why Mario offering this workshop?
+- Setting up environment
+- Basic test
+- Hands-on coding
+- Questions, feedback, next steps
+
+## Why code?
+
+- You can make the computer do what you want! 
+- That is really, really cool! 😍
+- That should be enough, but let's go deeper...
+- Reproducibility
+- Collaboration
+- Automatize repetitive things
+- Think more carefully about data
+- Coding-based analysis has many more tools and options
+
+## Objectives
+
+- Feel confident that you can learn to analyze data using R
+- Identify the basic concepts of R
+- Use the posit cloud platform to run R code
+- Identify quarto's basic functionality
+
+## Why Mario?
+
+- Cognitive and behavioral scientist
+- Analyzes quantitative data daily
+- Extensive experience using R, python, quarto, and other data analysis and programming tools
+- Passionate about reproducibility and open science
+- Passionate about software development
+- Teaches data analysis and programming to graduate students
+
+# Setting up the environment
+
+## Create account
+  - Visit [https://posit.cloud](https://posit.cloud)
+  - Create a free account
+
+
+## Create a new project
+  - Press `New Project` 
+  - Select `New RStudio Project` (will take a minute)
+
+## Create a Quarto document
+  
+  - Press `+`
+  - Press `Quarto Document`
+  - Give it a name
+  - Press `Create`
+
+## Quick test
+
+:::: {.columns}
+::: {.column width="50%"}
+
+- Switch to source mode by pressing `Source`
+- Render document by pressing `Render`
+- Install packages by pressing `install`
+- Render document again
+
+:::
+
+::: {.column width="50%"}
+
+- Clap when you see the rendered document 🥳
+- On your way to be a coder! 🚀
+
+:::
+::::
+
+# Clean document
+Delete everything below the 5th line
+
+# Hands-on coding
+:::: {.columns}
+::: {.column width="50%" .vertical-center}
+Here comes the good stuff 💻🤓
+:::
+
+::: {.column width="50%"}
+- Read data
+- Inspect data
+- Visualize data
+- Summarize data
+- Perform inferential statistics
+:::
+::::
+
+## Discussion
+
+:::: {.columns}
+::: {.column width="40%"}
+![](coding_cat.jpeg)
+:::
+ 
+::: {.column width="60%"}
+- How was it?
+- What did you like the most?
+- What was most challenging?
+:::
+::::
+
+::: {.notes}
+image credits:
+https://www.google.com/url?sa=i&url=https%3A%2F%2Frforcats.net%2F&psig=AOvVaw1c021Dewyg54JMwjx-s3zV&ust=1733266121898000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCMjQgdaViooDFQAAAAAdAAAAABAJ
+:::
+
+## Next steps
+- [Lisa DeBruine - videos](https://www.youtube.com/playlist?list=PLA2iRWVwbpTKqULIFGBIe4Bg-YounTV1J)
+- [Applied Data Skills - book](https://psyteachr.github.io/ads-v3/)
+
+## Materials
+[https://github.com/mario-bermonti/talks](https://github.com/mario-bermonti/talks)
