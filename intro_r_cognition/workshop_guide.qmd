@@ -11,6 +11,7 @@ format:
 ---
 
 # Intro
+[https://github.com/mario-bermonti/talks](https://github.com/mario-bermonti/talks)
 
 ## Agenda
 
@@ -127,3 +128,6 @@ https://www.google.com/url?sa=i&url=https%3A%2F%2Frforcats.net%2F&psig=AOvVaw1c0
 ## Next steps
 - [Lisa DeBruine - videos](https://www.youtube.com/playlist?list=PLA2iRWVwbpTKqULIFGBIe4Bg-YounTV1J)
 - [Applied Data Skills - book](https://psyteachr.github.io/ads-v3/)
+
+## Materials
+[https://github.com/mario-bermonti/talks](https://github.com/mario-bermonti/talks)
