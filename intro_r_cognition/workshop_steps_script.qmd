@@ -1,0 +1,217 @@
+---
+title: "Script presenting the final script that will be produced during the workshop split into more pedagogical steps"
+format: 
+    html:
+        df-print: kable
+---
+
+## Setup
+
+```{r}
+library(tidyverse)
+library(broom)
+library(easystats)
+library(effectsize)
+```
+
+## Read data
+
+```{r}
+data <- read_csv("https://raw.githubusercontent.com/mario-bermonti/talks/refs/heads/intro_r/intro_r_cognition/data.csv")
+```
+
+## Inspect the data
+
+```{r}
+head(data)
+```
+
+```{r}
+dim(data)
+```
+
+```{r}
+str(data)
+```
+
+## Effect of MDD on digit span forward
+### Viz
+#### Box plot
+
+```{r}
+ggplot(
+    data,
+    aes(x = group, y = digit_span_forward)
+) +
+geom_boxplot()
+```
+
+#### Bar plot
+
+Let's calculate the means we will plot
+
+```{r}
+means <- data |>
+    group_by(group) |>
+    summarise(
+        mean_dsf = mean(digit_span_forward),
+        mean_dsb = mean(digit_span_backward)
+    )
+
+means
+```
+
+Let's build the visualization
+
+```{r}
+ggplot(
+    data = means,
+    aes(x = group, y = mean_dsf)
+) + 
+geom_bar(stat = "identity")
+```
+
+#### Violin plot
+
+```{r}
+ggplot(
+    data,
+    aes(x = group, y = digit_span_forward)
+) + 
+geom_violindot()
+```
+
+### Descriptive stats
+#### General
+
+```{r}
+data |>
+    summarise(
+        mean_dsf = mean(digit_span_forward),
+        sd_dsf = sd(digit_span_forward),
+        min_dsf = min(digit_span_forward),
+        max_dsf = max(digit_span_forward)
+    )
+```
+
+#### By group
+
+```{r}
+data |>
+    group_by(group) |>
+    summarise(
+        mean_dsf = mean(digit_span_forward),
+        sd_dsf = sd(digit_span_forward),
+        min_dsf = min(digit_span_forward),
+        max_dsf = max(digit_span_forward)
+    )
+```
+
+### Inferential
+
+```{r}
+results_ttest <- t.test(
+    digit_span_forward ~ group,
+    data = data
+)
+
+tidy(results_ttest)   
+```
+
+```{r}
+hedges_g(
+  data = data,
+  digit_span_forward ~ group
+)
+```
+
+## Effect of MDD on digit span backward
+### Viz
+#### Box plot
+
+```{r}
+ggplot(
+    data,
+    aes(x = group, y = digit_span_backward)
+) +
+geom_boxplot()
+```
+
+#### Bar plot
+
+Let's calculate the means we will plot
+
+```{r}
+means <- data |>
+    group_by(group) |>
+    summarise(
+        mean_dsb = mean(digit_span_backward),
+        mean_dsb = mean(digit_span_backward)
+    )
+
+means
+```
+
+Let's build the visualization
+
+```{r}
+ggplot(
+    data = means,
+    aes(x = group, y = mean_dsb)
+) + 
+geom_bar(stat = "identity")
+```
+
+#### Violin plot
+
+```{r}
+ggplot(
+    data,
+    aes(x = group, y = digit_span_backward)
+) + 
+geom_violindot()
+```
+
+### Descriptive stats
+#### General
+
+```{r}
+data |>
+    summarise(
+        mean_dsb = mean(digit_span_backward),
+        sd_dsb = sd(digit_span_backward),
+        min_dsb = min(digit_span_backward),
+        max_dsb = max(digit_span_backward)
+    )
+```
+
+#### By group
+
+```{r}
+data |>
+    group_by(group) |>
+    summarise(
+        mean_dsb = mean(digit_span_backward),
+        sd_dsb = sd(digit_span_backward),
+        min_dsb = min(digit_span_backward),
+        max_dsb = max(digit_span_backward)
+    )
+```
+
+### Inferential
+
+```{r}
+results_ttest <- t.test(
+    digit_span_backward ~ group,
+    data = data
+)
+
+tidy(results_ttest)   
+```
+
+```{r}
+hedges_g(
+  data = data,
+  digit_span_backward ~ group
+)
+```
