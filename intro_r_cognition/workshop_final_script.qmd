@@ -1,5 +1,5 @@
 ---
-title: "Script that showcases what should be the final product of the script that will be developed during the workshop"
+title: "Script that showcases what will be the script produced during the workshop"
 format: 
     html:
         df-print: kable
