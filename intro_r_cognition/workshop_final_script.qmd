@@ -21,7 +21,7 @@ library(effectsize)
 Let's read the data from an URL (online) using the tidyverse function `read_csv`.
 
 ```{r}
-data <- read_csv("https://raw.githubusercontent.com/mario-bermonti/talks/refs/heads/intro_r/intro_r_cognition/data.csv")
+data <- read_csv("https://raw.githubusercontent.com/mario-bermonti/talks/refs/heads/main/intro_r_cognition/data.csv")
 ```
 
 ## Inspect the data
