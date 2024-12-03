@@ -1,1 +1,1 @@
-Sitemap: https://github.com/mario-bermonti/talks/sitemap.xml
+Sitemap: https://mario-bermonti.github.io/talks/sitemap.xml
