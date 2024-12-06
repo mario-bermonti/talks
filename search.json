@@ -123,7 +123,7 @@
     "href": "intro_r_cognition/workshop_guide.html#materials",
     "title": "Analyzing cognitive data using R",
     "section": "Materials",
-    "text": "Materials\nhttps://github.com/mario-bermonti/talks"
+    "text": "Materials\n\nFinal script developed in this workshop: https://mario-bermonti.github.io/talks/intro_r_cognition/workshop_final_script\nMaterials for all workshops: https://mario-bermonti.github.io/talks/"
   },
   {
     "objectID": "glm/glm.html#objectives",
