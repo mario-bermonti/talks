@@ -130,4 +130,7 @@ https://www.google.com/url?sa=i&url=https%3A%2F%2Frforcats.net%2F&psig=AOvVaw1c0
 - [Applied Data Skills - book](https://psyteachr.github.io/ads-v3/)
 
 ## Materials
-[https://github.com/mario-bermonti/talks](https://github.com/mario-bermonti/talks)
+ 
+- Final script developed in this workshop: [https://mario-bermonti.github.io/talks/intro_r_cognition/workshop_final_script](https://mario-bermonti.github.io/talks/intro_r_cognition/workshop_final_script)
+
+- Materials for all workshops: [https://mario-bermonti.github.io/talks/](https://mario-bermonti.github.io/talks/)
